@@ -1,3 +1,3 @@
 ESP8266相关的一些html文件
-1.WebOTA界面：ESP8266HTTPUpdateServer.h内默认界面的替换品
-2.Web配网界面
+WebOTA界面：ESP8266HTTPUpdateServer.h内默认界面的替换品
+Web配网界面
