@@ -1,0 +1,86 @@
+<!-- Web OTA界面
+     ESP8266HTTPUpdateServer库默认界面的替换品
+-->
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" /> <!--适应手机宽度-->
+    <title>Web OTA</title>
+    <style>
+        a   
+        {
+            color: #9ACFDD; 
+            text-decoration:none;
+        } 
+        body 
+        {
+            background: #121317;
+        }
+
+        .main 
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #121317;
+            text-align: center;
+        }
+
+        .main h1 
+        {
+            color: white;
+            font-weight: 450;
+        }
+    
+        .main button 
+        {
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid #FFEB4D;
+            padding: 15px 60px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+    
+        .main button:hover 
+        {
+            background: #FFEB4D;
+        }
+    
+        .main input[type="submit"] 
+        {
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid #2ecc2e;
+            padding: 15px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+        .main input[type="submit"]:hover 
+        {
+            background: #2ecc2e;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" class="main" action=""  enctype='multipart/form-data'>
+        <h1>Web OTA</h1>
+        <input type='file' accept='.bin,.bin.gz' id="OTA_file" style="display:none">
+        <button onclick="OTA_file.click()">选择固件</button>
+        <input type="submit" value="更新">
+        <p style="color:#999;text-align: center;">Copyright © 2021 By <a href='https://github.com/a1bc2de3f'>土匪</a></p>
+    </form>
+</body>
+</html>
