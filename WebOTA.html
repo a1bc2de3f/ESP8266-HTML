@@ -32,7 +32,7 @@
             font-weight: 450;
         }
     
-        .main button 
+        .main input[type="button"] 
         {
             background: none;
             display: block;
@@ -47,7 +47,7 @@
             cursor: pointer;
         }
     
-        .main button:hover 
+        .main input[type="button"]:hover 
         {
             background: #FFEB4D;
         }
@@ -75,12 +75,12 @@
 </head>
 
 <body>
-    <form method="POST" class="main" action=""  enctype='multipart/form-data'>
+    <form method="POST" class="main" action=""  enctype="multipart/form-data">
         <h1>Web OTA</h1>
-        <input type='file' accept='.bin,.bin.gz' id="OTA_file" style="display:none">
-        <button onclick="OTA_file.click()">选择固件</button>
+        <input type="file" accept=".bin,.bin.gz" id="OTA_file" style="display:none">
+        <input type="button" onclick="OTA_file.click()" value="选择固件">
         <input type="submit" value="更新">
-        <p style="color:#999;text-align: center;">Copyright © 2021 By <a href='https://github.com/a1bc2de3f'>土匪</a></p>
+        <p style="color:#999;text-align: center;">Copyright © 2021 By <a href="https://github.com/a1bc2de3f">土匪</a></p>
     </form>
 </body>
 </html>
