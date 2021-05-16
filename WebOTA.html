@@ -4,18 +4,18 @@
 <!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" /> <!--适应手机宽度-->
+    <meta charset="utf-8">
     <title>Web OTA</title>
     <style>
         a   
         {
             color: #9ACFDD; 
-            text-decoration:none;
+            text-decoration:none
         } 
-        body 
-        {
-            background: #121317;
-        }
 
+        body {background: #121317}
+        p {color:#999}
+        
         .main 
         {
             position: absolute;
@@ -23,13 +23,13 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: #121317;
-            text-align: center;
+            text-align: center
         }
 
         .main h1 
         {
             color: white;
-            font-weight: 450;
+            font-weight: 450
         }
     
         .main input[type="button"] 
@@ -44,13 +44,10 @@
             color: white;
             border-radius: 24px;
             transition: 0.25s;
-            cursor: pointer;
+            cursor: pointer
         }
     
-        .main input[type="button"]:hover 
-        {
-            background: #FFEB4D;
-        }
+        .main input[type="button"]:hover {background: #FFEB4D}
     
         .main input[type="submit"] 
         {
@@ -64,23 +61,20 @@
             color: white;
             border-radius: 24px;
             transition: 0.25s;
-            cursor: pointer;
+            cursor: pointer
         }
 
-        .main input[type="submit"]:hover 
-        {
-            background: #2ecc2e;
-        }
+        .main input[type="submit"]:hover {background: #2ecc2e}
     </style>
 </head>
 
 <body>
     <form method="POST" class="main" action=""  enctype="multipart/form-data">
         <h1>Web OTA</h1>
-        <input type="file" accept=".bin,.bin.gz" id="OTA_file" style="display:none">
+        <input type="file" accept=".bin,.bin.gz" name="firmware" id="OTA_file" style="display:none">
         <input type="button" onclick="OTA_file.click()" value="选择固件">
         <input type="submit" value="更新">
-        <p style="color:#999;text-align: center;">Copyright © 2021 By <a href="https://github.com/a1bc2de3f" target="_blank">土匪</a></p>
+        <p>Copyright © 2021 By <a href="https://github.com/a1bc2de3f" target="_blank">土匪</a></p>
     </form>
 </body>
 </html>
